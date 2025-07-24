@@ -37,8 +37,8 @@ export default function Profile() {
   }
   return (
     <div className="mt-8">
-      <div className="flex gap-4">
-        <div className="h-45 rounded overflow-hidden">
+      <div className="block lg:flex gap-4">
+        <div className="h-45 mb-4 lg:mb-0 rounded overflow-hidden">
           <img
             src={
               profileData?.profile_picture ||

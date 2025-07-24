@@ -152,6 +152,22 @@ export default function EditProfile() {
           </select>
         </div>
       </div>
+      <div className="mt-3">
+        <div className="w-full">
+          <label htmlFor="" className="text-sm font-medium">
+            Image_Url
+          </label>
+          <input
+            type="text"
+            className="input input-bordered focus-within:outline-none focus-within:border-[#084279] w-full mt-1"
+            placeholder="Enter your image URL"
+            value={profileData?.profile_picture || ""}
+            onChange={(e) =>
+              handleInputChange("profile_picture", e.target.value)
+            }
+          />
+        </div>
+      </div>
       <div className="mt-4">
         <button
           onClick={updateProfile}
