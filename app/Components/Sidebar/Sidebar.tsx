@@ -26,18 +26,13 @@ export default function Sidebar({ isOpen = true }: { isOpen?: boolean }) {
       icon: <UserRoundPen className="size-4" />,
     },
     {
-      title: "KRS",
-      link: "/Dashboard/KRS",
-      icon: <File className="size-4" />,
-    },
-    {
-      title: "KHS",
-      link: "/Dashboard/KHS",
-      icon: <File className="size-4" />,
-    },
-    {
       title: "Daftar Matakuliah",
       link: "/Dashboard/DaftarMatakuliah",
+      icon: <BookOpen className="size-4" />,
+    },
+    {
+      title: "Daftar Kelas",
+      link: "/Dashboard/DaftarKelas",
       icon: <BookOpen className="size-4" />,
     },
     {
@@ -56,9 +51,8 @@ export default function Sidebar({ isOpen = true }: { isOpen?: boolean }) {
     const pathToTitle: { [key: string]: string } = {
       "/Dashboard": "Beranda",
       "/Dashboard/Profile": "Profile",
-      "/Dashboard/KRS": "KRS",
-      "/Dashboard/KHS": "KHS",
       "/Dashboard/DaftarMatakuliah": "Daftar Matakuliah",
+      "/Dashboard/DaftarKelas": "Daftar Kelas",
       "/Dashboard/DaftarMahasiswa": "Daftar Mahasiswa",
       "/Dashboard/DaftarDosen": "Daftar Dosen",
     };

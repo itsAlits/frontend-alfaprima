@@ -31,7 +31,6 @@ export default function EditProfile() {
           Authorization: `Bearer ${token}`,
         },
       });
-      console.log(response.data);
       setProfileData(response.data.data.user);
     } catch (error) {
       console.error("Error fetching profile:", error);
@@ -121,16 +120,19 @@ export default function EditProfile() {
       </div>
       <div className="flex gap-3 mt-3">
         <div className="w-full">
-          <label htmlFor="" className="text-sm font-medium">
+          <label htmlFor="" className="text-sm font-medium block">
             Gender
           </label>
-          <input
-            type="text"
-            className="input input-bordered focus-within:outline-none focus-within:border-[#084279] w-full mt-1"
-            placeholder="Enter your gender"
+          <select
+            name="gender"
+            className="select mt-2 focus-within:outline-none focus-within:border-[#084279] w-full"
             value={profileData?.gender || ""}
             onChange={(e) => handleInputChange("gender", e.target.value)}
-          />
+          >
+            <option value="">{profileData?.gender}</option>
+            <option value="Laki-Laki">Laki-Laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
         </div>
         <div className="w-full">
           <label htmlFor="" className="text-sm font-medium block">

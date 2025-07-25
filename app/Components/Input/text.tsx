@@ -23,7 +23,7 @@ export default function TextInput({
         placeholder={placeholder}
         value={value || ""}
         onChange={(e) => onChange?.(e.target.value)}
-        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-[#0b59a1] focus:border-[#0b59a1] outline-none transition-colors"
+        className="input input-bordered focus-within:outline-none focus-within:border-[#084279] w-full"
       />
     </div>
   );

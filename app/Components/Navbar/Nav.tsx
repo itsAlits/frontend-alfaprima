@@ -68,7 +68,7 @@ export default function Nav({
       id="nav"
       className={`bg-[#0b59a1] ${
         isSidebarOpen ? "ps-64" : "ps-4"
-      } text-white py-4 transition-all fixed top-0 w-full duration-300`}
+      } text-white py-3 transition-all h-[57px] fixed top-0 w-full duration-300`}
     >
       <div>
         <div className="flex justify-between items-center pe-4">
@@ -84,7 +84,7 @@ export default function Nav({
               {profileData?.role.name && ` (${profileData.role.name})`}
             </h1>
             <button
-              className="ms-4 p-2 border rounded curspor-pointer bg-[#0b59a1] text-white hover:text-gray-300"
+              className="ms-4 p-2 cursor-pointer  hover:text-gray-300"
               onClick={logout}
             >
               <Power className="size-4" />

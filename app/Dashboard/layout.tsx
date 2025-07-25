@@ -22,7 +22,7 @@ export default function DashboardLayout({
         <Sidebar isOpen={isSidebarOpen} />
         <Nav onMenuToggle={toggleSidebar} isSidebarOpen={isSidebarOpen} />
         <div
-          className={`contentArea min-h-screen bg-[#f2f2f2] transition-all duration-300 pt-22 pe-4 ${
+          className={`contentArea min-h-screen bg-[#f2f2f2] transition-all duration-300 pt-19 pe-4 ${
             isSidebarOpen ? "ps-64" : "ps-4"
           }`}
         >
